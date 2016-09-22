@@ -1,0 +1,8 @@
+node {
+  stage 'Checkout'
+
+  stage 'Package Docker image'
+
+  stage 'Publish'
+  sh 'docker-compose up'
+}
